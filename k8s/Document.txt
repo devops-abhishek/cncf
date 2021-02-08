@@ -1,0 +1,23 @@
+#kubectl run nginx --image=nginx
+#kubectl describe pod nginx | grep -i Image
+#kubectl get pods -o wide
+#kubectl get pods --show-labels
+#kubectl delete pod nginx
+#kubectl run nginx --image=nginx --dry-run -o yaml > nginx.yaml
+#kubectl replace -f nginx.yaml
+#kubectl scale --replicas=6 deploy nginx
+#kubectl create -d nginx-deploy.yaml --record
+#kubectl rollout status deployment/nginx
+#kubectl set image deployment/nginx nginx-container=nginx:1.16.1
+#kubectl rollout history deploy/nginx
+#kubectl rollout undo deploy/nginx --to-revision=2
+#kubectl autoscale deploy/nginx --min=2 --max=5 --cpu=percent=80 
+#kubectl rollout pause deploy/nginx-deploy
+#kubectl rollout resume deploy/nginx-deploy
+#kubectl create deployment nginx-deploy --image=nginx
+
+FQDN :
+<service-name>.<namespace>.svc.cluster.local
+
+#kubectl config set-context $(kubectl config current-context) --namespace=test
+#kubectl get ns --no-headers

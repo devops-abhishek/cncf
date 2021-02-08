@@ -1,0 +1,9 @@
+#helm repo add nginx-stable https://helm.nginx.com/stable
+#helm repo update
+#helm repo list
+#helm install my-release-nginx nginx-stable/nginx-ingress
+#helm uninstall my-release-nginx
+#helm list
+#helm create nginx
+#kubectl install nginx ./nginx
+#kubectl install --generate-name ./nginx
